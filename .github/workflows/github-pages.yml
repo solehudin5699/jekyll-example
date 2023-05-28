@@ -19,15 +19,15 @@ jobs:
       - uses: helaili/jekyll-action@v2 # Choose any one of the Jekyll Actions
         with: # Some relative inputs of your action
           token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: "gh-pages"
+          # target_branch: "gh-pages"
       # Specify the Jekyll source location as a parameter
-      - uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # jekyll_src: "/"
+      # - uses: helaili/jekyll-action@v2
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     jekyll_src: "."
 
-      # Specify the target branch (optional)
-      - uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: "gh-pages"
+      # # Specify the target branch (optional)
+      # - uses: helaili/jekyll-action@v2
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     target_branch: "gh-pages"
